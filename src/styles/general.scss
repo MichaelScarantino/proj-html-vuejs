@@ -2,25 +2,24 @@
 @import '~bootstrap/scss/bootstrap';
 // Import Fontawesome
 @import '~@fortawesome/fontawesome-free/css/all.css';
-// Import Font Roboto
-@import '~@fontsource/roboto/300.css';
-@import '~@fontsource/roboto/700.css';
+// Import Font Arsenal
+@import '~@fontsource/arsenal/400.css';
+@import '~@fontsource/arsenal/700.css';
 // Import Variables.scss
 @import './variables.scss';
 
 // COMMON
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Arsenal", sans-serif;
 }
 // Img
 img{
     max-width: 100%;
 }
-// Header and Footer Wrapper
-.header-and-footer-wrapper{
-    width: 95%;
-    height: 100%;
-    margin: 0 auto
+// Wrapper
+.wrapper{
+    width: 50%;
+    margin: 0 auto;
 }
 // Ul
 ul{
@@ -35,14 +34,23 @@ a{
 a:hover{
     color: inherit;
 }
+// H
+h2{
+    margin: 0;
+}
+// p
+p{
+    margin: 0;
+}
 // active
 .active{
     color: $primary_color;
 }
 // Btn
 .ms_btn{
-    padding: 5px 15px;
+    padding: 7px 25px;
     display: inline-block;
+    border-radius: 1px;
 }
 .ms_btn-lightblue{
     color: inherit;

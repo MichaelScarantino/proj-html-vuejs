@@ -39,7 +39,31 @@
 
         <!-- Header Bottom -->
         <section class="header-bottom">
-
+            <!-- Wrapper -->
+            <div class="wrapper">
+                <!-- Container Fluid -->
+                <div class="container-fluid">
+                    <!-- Jumbotron -->
+                    <div class="jumbotron">
+                        <!-- Jumbotron Title -->
+                        <div class="jumbotron-title">
+                            <h2>Caring <span class="active">For Life</span></h2>
+                        </div>
+                        <!-- Jumbotron Cta -->
+                        <div class="jumbotron-cta">
+                            <!-- Jumbotron Description -->
+                            <div class="jumbotron-cta-description">
+                                <p>Kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family.</p>
+                            </div>
+                            <!-- Jumbotron Btn -->
+                            <div class="jumbotron-cta-btn">
+                                <a class="ms_btn ms_btn-lightblue" href="#">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </header>
 </template>
@@ -60,23 +84,43 @@ export default {
 @import '../styles/variables.scss';
 header{
     width: 100%;
+    height: 100vh;
     background-image: url('../assets/images/header-image-homepage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-
-    // TEST
-    height: 400px;
-
     .header-top{
         width: 100%;
         padding: 20px 0;
         text-transform: uppercase;
-        font-size: 14px;
-
-        .header-top-menu{
+        font-size: 12px;
+        &-menu{
             li{
                 margin: 0 20px;
+            }
+        }
+    }
+
+    .header-bottom{
+        .jumbotron{
+            padding: 130px 0;
+            width: 70%;
+            &-title{
+                h2{
+                    font-size: 55px;
+                }
+            }
+            &-cta{
+
+                &-description{
+                    padding: 20px 0;
+                    color: #d7d0cf;
+                    font-size: 18px;
+                }
+                &-btn{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
             }
         }
     }
