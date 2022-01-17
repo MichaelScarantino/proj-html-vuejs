@@ -2,13 +2,49 @@
 @import '~bootstrap/scss/bootstrap';
 // Import Fontawesome
 @import '~@fortawesome/fontawesome-free/css/all.css';
-// Import Variables.scss
-@import './variables.scss';
 // Import Font Roboto
 @import '~@fontsource/roboto/300.css';
 @import '~@fontsource/roboto/700.css';
+// Import Variables.scss
+@import './variables.scss';
 
 // COMMON
 body{
     font-family: "Roboto", sans-serif;
+}
+// Img
+img{
+    max-width: 100%;
+}
+// Header and Footer Wrapper
+.header-and-footer-wrapper{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto
+}
+// Ul
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+// A
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+// active
+.active{
+    color: $primary_color;
+}
+// Btn
+.ms_btn{
+    padding: 5px 15px;
+    display: inline-block;
+}
+.ms_btn-lightblue{
+    color: inherit;
+    background-color: $primary_color;
 }
