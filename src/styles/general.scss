@@ -18,7 +18,7 @@ img{
 }
 // Wrapper
 .wrapper{
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
 }
 // Ul
@@ -46,6 +46,9 @@ p{
 .active{
     color: $primary_color;
 }
+.bgr-facebook{
+    background-color: #3c5998;
+}
 // Btn
 .ms_btn{
     padding: 7px 25px;
@@ -56,3 +59,65 @@ p{
     color: inherit;
     background-color: $primary_color;
 }
+
+// Main
+main{
+    p{
+        line-height: 30px;
+    }
+}
+main section{
+    padding: 50px 0;
+}
+
+// Main Text and Main Text And Icon
+.main-text,
+.main-text-and-icon{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.main-text-and-icon{
+
+    h3{
+        text-transform: uppercase;
+        &::after{
+            content: '';
+            width: 200px;
+            height: 1px;
+            display: block;
+            background-color: lightgray;
+            margin: 20px auto;
+        }
+    }
+}
+// Single Description
+.single-description{
+    text-align: center;
+    &-icon{
+        padding-bottom: 10px;
+        img{
+            width: 60px;
+        }
+    }
+    &-text{
+    
+        h4{
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 13px;
+            color: gray;
+            text-align: center;
+        }
+    }
+}
+.single-icon{
+    padding-bottom: 20px;
+    img{
+        width: 50px;
+    }
+}
+
