@@ -10,6 +10,9 @@ export default {
   name: "Header",
   components: {
   },
+  props: {
+      headerArray: Array
+  }
 };
 </script>
 

@@ -10,6 +10,9 @@ export default {
   name: "Footer",
   components: {
   },
+  props: {
+      footerArray: Array
+  }
 };
 </script>
 

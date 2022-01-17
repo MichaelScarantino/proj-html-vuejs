@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :headerArray="headerNavList"/>
     <Main />
-    <Footer />
+    <Footer :footerArray="footerList"/>
   </div>
 </template>
 
@@ -17,6 +17,70 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data: function() {
+    return{
+      headerNavList: [
+        {
+          name: 'home',
+          active: true
+        },
+        {
+          name: 'about',
+          active: false
+        },
+        {
+          name: 'departments',
+          active: false
+        },
+        {
+          name: 'articles',
+          active: false
+        }
+      ],
+      footerList: [
+        {
+          social: [
+            {
+              tag: '<i class="fab fa-facebook-f"></i>',
+              bgrColor: '#3c5998'
+            },
+            {
+              tag: '<i class="fab fa-twitter"></i>',
+              bgrColor: '#54acee'
+            },
+            {
+              tag: '<i class="fab fa-youtube"></i>',
+              bgrColor: '#cc201f'
+            },
+            {
+              tag: '<i class="fab fa-instagram"></i>',
+              bgrColor: '#40729b'
+            }
+          ]
+        },
+        {
+          medical: [
+            {
+              name: 'Cardiology'
+            },
+            {
+              name: 'Pediactrics'
+            },
+            {
+              name: 'Diabetes Care'
+            },
+            {
+              name: 'Pre-natel Care'
+            },
+            {
+              name: 'Ultrasound Echocardiogram'
+            }
+          ]
+        }
+        
+      ],
+    };
   },
 };
 </script>
