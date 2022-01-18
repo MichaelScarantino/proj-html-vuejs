@@ -6,6 +6,7 @@
     <Services />
     <Facilities />
     <LearnMore />
+    <Appointment />
   </main>
 </template>
 
@@ -15,6 +16,7 @@ import Meet from "../components/Meet.vue";
 import Services from "../components/Services.vue";
 import Facilities from "../components/Facilities.vue";
 import LearnMore from "../components/LearnMore.vue";
+import Appointment from "../components/Appointment.vue";
 
 export default {
   name: "Main",
@@ -24,7 +26,7 @@ export default {
     Services,
     Facilities,
     LearnMore,
-
+    Appointment,
   },
 };
 </script>
