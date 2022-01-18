@@ -4,7 +4,7 @@
         <!-- Header Top -->
         <section class="header-top">
             <!-- Container -->
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Row -->
                 <div class="row align-items-center">
                     <!-- Col -->
@@ -93,7 +93,7 @@ header{
     // Header Top
     .header-top{
         width: 100%;
-        padding: 20px 0;
+        padding: 30px;
         text-transform: uppercase;
         font-size: 12px;
         // Header Menu

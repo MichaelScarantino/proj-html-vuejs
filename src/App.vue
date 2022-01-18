@@ -40,21 +40,21 @@ export default {
       ],
       footerList: [
         {
-          social: [
+          socials: [
             {
-              tag: '<i class="fab fa-facebook-f"></i>',
+              class: 'fab fa-facebook-f',
               bgrColor: '#3c5998'
             },
             {
-              tag: '<i class="fab fa-twitter"></i>',
+              class: 'fab fa-twitter',
               bgrColor: '#54acee'
             },
             {
-              tag: '<i class="fab fa-youtube"></i>',
+              class: 'fab fa-youtube',
               bgrColor: '#cc201f'
             },
             {
-              tag: '<i class="fab fa-instagram"></i>',
+              class: 'fab fa-instagram',
               bgrColor: '#40729b'
             }
           ]

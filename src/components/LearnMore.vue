@@ -64,7 +64,7 @@ export default {
     // Single Learn More
     .single-learn-more{
         text-align: center;
-        padding: 40px 25px;
+        padding: 40px 20px;
         h5{
             font-size: 14px;
         }
