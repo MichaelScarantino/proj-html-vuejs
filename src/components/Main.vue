@@ -7,6 +7,7 @@
     <Facilities />
     <LearnMore />
     <Appointment />
+    <Clients />
   </main>
 </template>
 
@@ -17,6 +18,7 @@ import Services from "../components/Services.vue";
 import Facilities from "../components/Facilities.vue";
 import LearnMore from "../components/LearnMore.vue";
 import Appointment from "../components/Appointment.vue";
+import Clients from "./Clients.vue";
 
 export default {
   name: "Main",
@@ -27,6 +29,7 @@ export default {
     Facilities,
     LearnMore,
     Appointment,
+    Clients,
   },
 };
 </script>
