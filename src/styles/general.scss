@@ -46,8 +46,15 @@ p{
 .active{
     color: $primary_color;
 }
+// Bgr Social
 .bgr-facebook{
     background-color: #3c5998;
+}
+.bgr-twitter{
+    background-color: #54acee;
+}
+.bgr-instagram{
+    background-color: #40729b;
 }
 // Btn
 .ms_btn{
@@ -84,7 +91,7 @@ main section{
         text-transform: uppercase;
         &::after{
             content: '';
-            width: 200px;
+            width: 180px;
             height: 1px;
             display: block;
             background-color: lightgray;
@@ -108,7 +115,7 @@ main section{
             text-transform: uppercase;
         }
         p{
-            font-size: 13px;
+            font-size: 12px;
             color: gray;
             text-align: center;
         }
