@@ -1,7 +1,6 @@
 <template>
 <!-- Learn More -->
     <div class="learn-more">
-        
         <!-- Single Learn More -->
         <div id="emergency" class="single-learn-more">
             <h5>Emergency Care</h5>
@@ -15,7 +14,6 @@
                 <a class="ms_btn ms_btn-white" href="#">learn more</a>
             </div>
         </div>
-    
     
         <!-- Single Learn More -->
         <div id="diagnostics" class="single-learn-more">
@@ -44,8 +42,6 @@
                 <a class="ms_btn ms_btn-white" href="#">learn more</a>
             </div>
         </div>
-             
-        
     </div>
 </template>
 
