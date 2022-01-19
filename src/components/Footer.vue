@@ -102,6 +102,7 @@ footer{
         text-transform: uppercase;
         margin-top: 5px;
         color: black;
+        font-size: 13px;
       }
       // Avada Social Footer
   .avada-and-social-footer{
