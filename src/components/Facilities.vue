@@ -15,7 +15,7 @@
                     <p>Sed ut perspiciatis unde omnis iste natus error sit valuptatem accusatium doloremque laudatium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architeto beatae.</p>
                     <!-- Single Icon -->
                     <div class="single-icon">
-                        <img src="../assets/images/play-icon.png" alt="Play Icon">
+                        <img class="play" src="../assets/images/play-icon.png" alt="Play Icon">
                     </div>
                 </div>
             </div>    
@@ -45,6 +45,10 @@ export default {
         margin-bottom: 60px;
         p{
             padding-bottom: 20px;
+        }
+        // Play
+        .play{
+            cursor: pointer;
         }
     }
 }

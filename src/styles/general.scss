@@ -66,6 +66,9 @@ p{
 .ms_btn-lightblue{
     color: inherit;
     background-color: $primary_color;
+    &:hover{
+        background-color: #45c4d3;
+    }
 }
 .ms_btn-white{
     color: white;

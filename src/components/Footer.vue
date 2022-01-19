@@ -193,6 +193,12 @@ footer{
       text-transform: uppercase;
       font-size: 16px;
       margin-top: 45px;
+        a{
+          &:hover{
+          color: black;
+          background-color: rgb(243, 243, 243);
+        }
+      }
     }
   }
   // Commons Footer Social List and Footer Medical Department
