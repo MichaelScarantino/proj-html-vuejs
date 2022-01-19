@@ -60,7 +60,7 @@ export default {
           ]
         },
         {
-          medical: [
+          departments: [
             {
               name: 'Cardiology'
             },

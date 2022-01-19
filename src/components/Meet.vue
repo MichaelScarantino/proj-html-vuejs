@@ -181,7 +181,7 @@ export default {
             // Single Doctor Social
             .single-doctor-social{
                 ul{
-                    margin-left: -37px;
+                    margin-left: -5px;
                     li{
                         display: inline-block;
                         margin: 0 5px;
