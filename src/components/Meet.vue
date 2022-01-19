@@ -17,101 +17,25 @@
                 <!-- Row -->
                 <div class="row">
                     <!-- Col -->
-                    <div class="col">
+                    <div v-for="(meetDetail, index) in meetDetails" :key="index" class="col">
                         <!-- Single Doctor -->
                         <div class="single-doctor">
                             <!-- Single Doctor Img -->
                             <div class="single-doctor-img">
-                                <img src="../assets/images/doctor-1-200x206.jpg" alt="Jon Snow Img">
+                                <img :src="require(`../assets/images/${meetDetail.image}.jpg`)" alt="Jon Snow Img">
                             </div>
                             <div class="single-doctor-info">
                                 <!-- Single Doctor Name -->
                                 <div class="single-doctor-name">
-                                    jon snow
+                                    {{ meetDetail.name }}
                                 </div>
                                 <!-- Single Doctor Trade -->
                                 <div class="single-doctor-trade">
-                                    Anesthesiologist
+                                    {{ meetDetail.trade }}
                                 </div>
                                 <!-- Single Doctor Info -->
                                 <div class="single-doctor-description">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> 
-                                </div>
-                                <!-- Single Doctor Social -->
-                                <div class="single-doctor-social">
-                                    <ul>
-                                        <li class="bgr-facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="bgr-twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="bgr-instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col">
-                        <!-- Single Doctor -->
-                        <div class="single-doctor">
-                            <!-- Single Doctor Img -->
-                            <div class="single-doctor-img">
-                                <img src="../assets/images/doctor-2-200x206.jpg" alt="Tony Stark Img">
-                            </div>
-                            <div class="single-doctor-info">
-                                <!-- Single Doctor Name -->
-                                <div class="single-doctor-name">
-                                    tony stark
-                                </div>
-                                <!-- Single Doctor Trade -->
-                                <div class="single-doctor-trade">
-                                    Cardiologist
-                                </div>
-                                <!-- Single Doctor Info -->
-                                <div class="single-doctor-description">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> 
-                                </div>
-                                <!-- Single Doctor Social -->
-                                <div class="single-doctor-social">
-                                    <ul>
-                                        <li class="bgr-facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="bgr-twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="bgr-instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col">
-                        <!-- Single Doctor -->
-                        <div class="single-doctor">
-                            <!-- Single Doctor Img -->
-                            <div class="single-doctor-img">
-                                <img src="../assets/images/doctor-3-200x206.jpg" alt="Anna Smith Img">
-                            </div>
-                            <div class="single-doctor-info">
-                                <!-- Single Doctor Name -->
-                                <div class="single-doctor-name">
-                                    anna smith
-                                </div>
-                                <!-- Single Doctor Trade -->
-                                <div class="single-doctor-trade">
-                                    nurse practitioner
-                                </div>
-                                <!-- Single Doctor Info -->
-                                <div class="single-doctor-description">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> 
+                                    <p>{{ meetDetail.description }}</p> 
                                 </div>
                                 <!-- Single Doctor Social -->
                                 <div class="single-doctor-social">
@@ -141,7 +65,8 @@
 
 export default {
   name: "Main",
-  components: {
+  props: {
+      meetDetails: Array
   },
 };
 </script>

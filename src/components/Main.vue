@@ -1,9 +1,9 @@
 <template>
   <!-- Main -->
   <main>
-    <Welcome />
-    <Meet />
-    <Services />
+    <Welcome :welcomeDetails="welcomeArray"/>
+    <Meet :meetDetails="meetArray" />
+    <Services :servicesDetails="servicesArray" />
     <Facilities />
     <LearnMore />
     <Appointment />
@@ -31,6 +31,11 @@ export default {
     Appointment,
     Clients,
   },
+  props: {
+    welcomeArray: Array,
+    meetArray: Array,
+    servicesArray: Array
+  }
 };
 </script>
 

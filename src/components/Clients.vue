@@ -39,9 +39,11 @@ export default {
   // Wrapper
   .wrapper{
     overflow: hidden;
+    // Clients Logo
     .clients-logo{
       display: flex;
       margin-left: -125px;
+      // Client Logo
       .client-logo{
         padding: 8px;
       }

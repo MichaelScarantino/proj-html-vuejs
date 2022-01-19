@@ -1,4 +1,5 @@
 <template>
+  <!-- Footer -->
   <footer>
     <!-- Container Fluid -->
     <div class="container-fluid">

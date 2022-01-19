@@ -3,14 +3,14 @@
 // Import Fontawesome
 @import '~@fortawesome/fontawesome-free/css/all.css';
 // Import Font Arsenal
-@import '~@fontsource/arsenal/400.css';
-@import '~@fontsource/arsenal/700.css';
+@import '~@fontsource/asap/400.css';
+@import '~@fontsource/asap/700.css';
 // Import Variables.scss
 @import './variables.scss';
 
 // COMMON
 body{
-    font-family: "Arsenal", sans-serif;
+    font-family: "Asap", sans-serif;
 }
 // Img
 img{
@@ -130,6 +130,7 @@ main section{
         }
     }
 }
+// Single icon
 .single-icon{
     padding-bottom: 20px;
     img{

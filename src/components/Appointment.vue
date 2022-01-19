@@ -32,7 +32,6 @@
 
 <script>
 
-
 export default {
   name: "Appointment",
 };
@@ -111,10 +110,8 @@ export default {
             textarea::placeholder{
                 font-size: 11px;
             }
-            
         }
     }
-    
 }
 
 </style>

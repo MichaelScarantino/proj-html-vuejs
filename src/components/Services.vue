@@ -17,92 +17,17 @@
                 <!-- Row -->
                 <div class="row row-cols-3">
                     <!-- Col -->
-                    <div class="col">
+                    <div v-for="(serviceDetail, index) in servicesDetails" :key="index" class="col">
                         <!-- Single Description -->
                         <div class="single-description">
                             <!-- Single Description Icon -->
                             <div class="single-description-icon">
-                                <img src="../assets/images/icon-14.png" alt="Ambulance Icon">
+                                <img :src="require(`../assets/images/${serviceDetail.image}.png`)" :alt="serviceDetail.alt">
                             </div>
                             <!-- Single Description Text -->
                             <div class="single-description-text">
-                                <h4>rehabilitation center</h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatitum deleniti atque corrupti quos dolores et quas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col">
-                        <!-- Single Description -->
-                        <div class="single-description">
-                            <!-- Single Description Icon -->
-                            <div class="single-description-icon">
-                                <img src="../assets/images/icon-15.png" alt="Tooth Icon">
-                            </div>
-                            <!-- Single Description Text -->
-                            <div class="single-description-text">
-                                <h4>dental implants</h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatitum deleniti atque corrupti quos dolores et quas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col">
-                        <!-- Single Description -->
-                        <div class="single-description">
-                            <!-- Single Description Icon -->
-                            <div class="single-description-icon">
-                                <img src="../assets/images/icon-16.png" alt="Chemical Container Icon">
-                            </div>
-                            <!-- Single Description Text -->
-                            <div class="single-description-text">
-                                <h4>medicine research</h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatitum deleniti atque corrupti quos dolores et quas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col">
-                        <!-- Single Description -->
-                        <div class="single-description">
-                            <!-- Single Description Icon -->
-                            <div class="single-description-icon">
-                                <img src="../assets/images/icon-11.png" alt="Drip Icon">
-                            </div>
-                            <!-- Single Description Text -->
-                            <div class="single-description-text">
-                                <h4>blood bank</h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatitum deleniti atque corrupti quos dolores et quas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col">
-                        <!-- Single Description -->
-                        <div class="single-description">
-                            <!-- Single Description Icon -->
-                            <div class="single-description-icon">
-                                <img src="../assets/images/icon-12.png" alt="Medicinal Icon">
-                            </div>
-                            <!-- Single Description Text -->
-                            <div class="single-description-text">
-                                <h4>pharmaceutical advice</h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatitum deleniti atque corrupti quos dolores et quas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Col -->
-                    <div class="col">
-                        <!-- Single Description -->
-                        <div class="single-description">
-                            <!-- Single Description Icon -->
-                            <div class="single-description-icon">
-                                <img src="../assets/images/icon-13.png" alt="Drip Icon">
-                            </div>
-                            <!-- Single Description Text -->
-                            <div class="single-description-text">
-                                <h4>medical counseling</h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatitum deleniti atque corrupti quos dolores et quas</p>
+                                <h4>{{ serviceDetail.title }}</h4>
+                                <p>{{ serviceDetail.text }}</p>
                             </div>
                         </div>
                     </div>
@@ -118,7 +43,9 @@
 
 export default {
   name: "Services",
-  
+  props: {
+      servicesDetails: Array
+  }
 };
 </script>
 
